@@ -57,6 +57,7 @@ h5 {
 h6 {
   font-size: 3.2rem;
 }
+
 p {
   margin-bottom: 3rem;
   line-height: 1.3;
@@ -223,4 +224,20 @@ a {
   top: -3.5rem;
   left: -1.5rem;
   transform: rotate(5deg);
+}
+
+.gallery-img {
+  width: 100%;
+  max-width: 36rem;
+  max-height: 36rem;
+  overflow: hidden;
+}
+
+.gallery-img img {
+  transition: all 300ms ease-in-out;
+  width: 90%;
+}
+
+.gallery-img img:hover {
+  transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
 }
