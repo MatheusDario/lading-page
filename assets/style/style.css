@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 
 :root {
-  --white: #F0F0F2;
+  --white: #f0f0f2;
   --blue: #023059;
   --lightBlue: #065473;
-  --aquaBlue: #08748C;
-  --gren: #02735E;
+  --aquaBlue: #08748c;
+  --gren: #02735e;
   --lightGrenn: #6ab04c;
-  --lightGray: #cecece
+  --lightGray: #cecece;
   --red: #dc143c;
   --gap: 3rem;
 }
@@ -16,6 +16,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -24,13 +25,18 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-size: 2rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -76,11 +82,13 @@ table {
   border-collapse: collapse;
 }
 
-thead th, tfoot td {
+thead th,
+tfoot td {
   background-color: var(--blue);
 }
 
-table td, table th {
+table td,
+table th {
   border: 0.2rem solid var(--lightBlue);
   text-align: left;
   padding: 1rem;
@@ -100,9 +108,8 @@ tfoot td {
   font-style: italic;
 }
 
-
 .main-bg {
-  background-image: url('../img/bg-color2.svg');
+  background-image: url("../img/bg-color2.svg");
   background-size: cover;
   background-position: center center;
   color: var(--white);
@@ -119,7 +126,7 @@ tfoot td {
 }
 
 .main-section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .menu {
@@ -129,7 +136,7 @@ tfoot td {
   right: 0;
   width: 100%;
   z-index: 1;
-  box-shadow: 0px 0px 7px rgba(0,0,0, .5);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 }
 
 .menu-spacing {
@@ -172,7 +179,7 @@ tfoot td {
 }
 
 .menu ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 1.2rem;
   left: 25%;
@@ -188,14 +195,14 @@ tfoot td {
 
 .intro-content {
   position: relative;
-  top: -6rem;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
   min-height: 100vh;
 }
 
-.intro-text-content, .intro-img {
+.intro-text-content,
+.intro-img {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -205,7 +212,7 @@ tfoot td {
   text-align: justify;
 }
 
-.intro-img img{
+.intro-img img {
   max-width: 100%;
   height: auto;
 }
@@ -221,7 +228,7 @@ tfoot td {
 }
 
 .description-content {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -284,10 +291,10 @@ tfoot td {
   justify-content: center;
 }
 
-.table-content h2, p {
+.table-content h2,
+p {
   text-align: center;
 }
-
 
 .pricing-content {
   display: flex;
@@ -297,14 +304,14 @@ tfoot td {
 }
 
 .plan {
-    background-color: var(--white);
-    color: var(--blue);
-    padding: 2.5rem;
-    margin: 1.2rem;
-    border-radius: 1rem;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+  background-color: var(--white);
+  color: var(--blue);
+  padding: 2.5rem;
+  margin: 1.2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .price {
@@ -318,17 +325,17 @@ ul.features {
 }
 
 .features li {
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
-button {
+.plan button {
   border: none;
   width: 100%;
   padding: 12px 35px;
   margin-top: 1rem;
   background-color: var(--lightGrenn);
-  color: #fff;
-  border-radius: 5px;
+  color: var(--white);
+  border-radius: 1rem;
   cursor: pointer;
   font-size: 16px;
   transition: all 300ms ease-in-out;
@@ -339,7 +346,7 @@ button {
 }
 
 .popular {
-  border: 2px solid var(--lightGrenn);
+  border: 0.3rem solid var(--lightGrenn);
   position: relative;
   transform: scale(1.08);
 }
@@ -353,5 +360,92 @@ button {
   color: #fff;
   padding: 4px 20px;
   font-size: 18px;
-  border-radius: 5px; 
+  border-radius: 5px;
+}
+
+.contact-form {
+  grid-column: span 2;
+}
+
+.form-grid legend {
+  font-style: italic;
+  font-size: 1.4rem;
+  margin: 1.5rem;
+}
+
+.contact-form .form-grid {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.form-group {
+  flex: 1 1 320px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  background: var(--blue);
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--white);
+  border-radius: 0.6rem;
+  font-size: 1.5rem;
+  outline: none;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 6px 2px var(--gren);
+}
+
+div.full-width {
+  width: 100%;
+  flex: 1 1 100%;
+}
+
+.form-group button {
+  border: 0.5rem solid var(--blue);
+  display: block;
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 1.3rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 0.9rem;
+  transition: all 300ms ease-in-out;
+  margin: auto;
+
+  &:hover {
+    color: var(--white);
+    background-color: var(--blue);
+  }
+}
+
+.footer {
+  margin: 0;
+  text-align: center;
+  padding: 0 0 2rem 0;
+  font-size: 1.5rem;
+  color: var(--blue);
+}
+
+.footer a {
+  color: inherit;
+  font-weight: bold;
 }

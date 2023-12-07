@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="/assets/style/style.css" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
   </head>
   <body>
     <header class="menu white-bg">
@@ -18,7 +19,7 @@
             <li><a href="#description">Descrição</a></li>
             <li><a href="#gallery">Galeria</a></li>
             <li><a href="#pricing">Preços</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
       </section>
@@ -202,5 +203,49 @@
         </div>
       </div>
     </section>
+
+    <section id="contact" class="white-bg main-section">
+      <div class="main-content intro-content">
+        <div class="intro-text-content">
+          <h2>Entre em contato e solicite um orçamento</h2>
+        </div>
+        <div class="intro-img">
+          <img
+            src="assets/img/contact.svg"
+            alt="Imagem simbolizando uma pessoa realizando um contato com outra pessoa"
+          />
+        </div>
+        <div class="contact-form">
+          <form action="#">
+            <fieldset class="form-grid">
+              <legend>Informe os dados</legend>
+              <div class="form-group">
+                <label for="name">Nome:</label>
+                <input placeholder="Digite seu nome completo" type="text" name="name" id="name">
+              </div>
+              <div class="form-group">
+                <label for="subject">Assunto:</label>
+                <input placeholder="Digite o assunto" type="text" name="subject" id="subject">
+              </div>
+              <div class="form-group">
+                <label for="name">E-mail:</label>
+                <input placeholder="Digite seu e-mail para contato" type="email" name="email" id="email">
+              </div>
+              <div class="form-group full-width">
+                <label for="name">Menssagem:</label>
+               <textarea placeholder="Digite sua menssagem" name="message" id="message" cols="30" rows="10"></textarea>
+              </div>
+              <div class="form-group full-width">
+                <button>Enviar Menssagem</button>
+              </div>
+             </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="white-bg footer">
+      <p>Desenvolvido por <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/matheus-dario">Matheus Dario</a></p>
+    </footer>
   </body>
 </html>
