@@ -67,7 +67,7 @@ a {
 }
 
 .main-bg {
-  background-image: url('../img/bg-color.svg');
+  background-image: url('../img/bg-color2.svg');
   background-size: cover;
   background-position: center center;
   color: var(--white);
@@ -182,4 +182,43 @@ a {
   flex-flow: column wrap;
   text-align: center;
   justify-content: center;
+}
+
+.description-content {
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.drescription-heading {
+  margin-bottom: 2rem;
+}
+.description-paragraph {
+  padding-bottom: 8rem;
+  text-align: justify;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  counter-reset: grid-counter;
+}
+
+.grid h3 {
+  font-size: 3rem;
+  position: relative;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+}
+
+.grid h3::before {
+  counter-increment: grid-counter;
+  content: counter(grid-counter);
+  position: absolute;
+  font-size: 8rem;
+  font-style: italic;
+  top: -3.5rem;
+  left: -1.5rem;
+  transform: rotate(5deg);
 }
