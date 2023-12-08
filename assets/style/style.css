@@ -460,7 +460,14 @@ div.full-width {
   }
 
   .intro-content h2 {
-    font-size: 4.3rem;
+    font-size: 3.5rem;
+  }
+
+  .top3-content h2 {
+    font-size: 3rem;
+  }
+  .drescription-heading {
+    font-size: 3rem;
   }
 
   .gallery-img {
@@ -479,6 +486,10 @@ div.full-width {
 
   .plan {
     margin-bottom: 3rem;
+  }
+
+  .plan h4 {
+    font-size: 4rem;
   }
 
   .menu {
