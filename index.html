@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="/assets/style/style.css" />
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
   </head>
   <body>
+    <input
+      id="close-menu"
+      class="close-menu"
+      aria-label="Close menu button"
+      role="button"
+      type="checkbox"
+    />
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <header class="menu white-bg">
       <section class="main-content menu-content">
-        <h1><a href="#intro">LOGO</a></h1>
+        <h1 onclick="getElementById('close-menu').checked = false;">
+          <a href="#intro">LOGO</a>
+        </h1>
 
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false;">
             <li><a href="#intro">Intro</a></li>
             <li><a href="#top3">Top 3</a></li>
             <li><a href="#description">Descrição</a></li>
@@ -163,15 +173,39 @@
       <div class="table-content">
         <h2>Preços</h2>
 
-        <div class="pricing-content main-content ">
+        <div class="pricing-content main-content">
           <div class="plan">
             <h4>Normal</h4>
             <div class="price">FREE</div>
             <ul class="features">
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Positivo"> Unlimited Calls</li>
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Positivo"> User</li>
-              <li><img src="assets/img/nocheck-circle.svg" alt="Marcador Negativo"> Unlimited Emails</li>
-              <li><img src="assets/img/nocheck-circle.svg" alt="Marcador Negativo"> No priority support</li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Positivo"
+                />
+                Unlimited Calls
+              </li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Positivo"
+                />
+                User
+              </li>
+              <li>
+                <img
+                  src="assets/img/nocheck-circle.svg"
+                  alt="Marcador Negativo"
+                />
+                Unlimited Emails
+              </li>
+              <li>
+                <img
+                  src="assets/img/nocheck-circle.svg"
+                  alt="Marcador Negativo"
+                />
+                No priority support
+              </li>
             </ul>
             <button>Signup</button>
           </div>
@@ -180,11 +214,41 @@
             <h4>Pro</h4>
             <div class="price">$10/month</div>
             <ul class="features">
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Positivo"> Unlimited Calls</li>
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Positivo"> Unlimited Login</li>
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Negativo"> Unlimited Sms</li>
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Negativo"> Unlimited Emails</li>
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Negativo"> Suport Emails</li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Positivo"
+                />
+                Unlimited Calls
+              </li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Positivo"
+                />
+                Unlimited Login
+              </li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Negativo"
+                />
+                Unlimited Sms
+              </li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Negativo"
+                />
+                Unlimited Emails
+              </li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Negativo"
+                />
+                Suport Emails
+              </li>
             </ul>
             <button>Buy Now</button>
           </div>
@@ -192,11 +256,41 @@
             <h4>Enterprise</h4>
             <div class="price">Custom Pricing</div>
             <ul class="features">
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Positivo"> Unlimited Calls</li>
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Positivo"> Unlimited Login</li>
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Negativo"> Unlimited Sms</li>
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Negativo"> Unlimited Emails</li>
-              <li><img src="assets/img/check-circle.svg" alt="Marcador Negativo"> Suport 24/7 All Days</li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Positivo"
+                />
+                Unlimited Calls
+              </li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Positivo"
+                />
+                Unlimited Login
+              </li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Negativo"
+                />
+                Unlimited Sms
+              </li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Negativo"
+                />
+                Unlimited Emails
+              </li>
+              <li>
+                <img
+                  src="assets/img/check-circle.svg"
+                  alt="Marcador Negativo"
+                />
+                Suport 24/7 All Days
+              </li>
             </ul>
             <button>Contact Us</button>
           </div>
@@ -221,31 +315,60 @@
               <legend>Informe os dados</legend>
               <div class="form-group">
                 <label for="name">Nome:</label>
-                <input placeholder="Digite seu nome completo" type="text" name="name" id="name">
+                <input
+                  placeholder="Digite seu nome completo"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
               </div>
               <div class="form-group">
                 <label for="subject">Assunto:</label>
-                <input placeholder="Digite o assunto" type="text" name="subject" id="subject">
+                <input
+                  placeholder="Digite o assunto"
+                  type="text"
+                  name="subject"
+                  id="subject"
+                />
               </div>
               <div class="form-group">
                 <label for="name">E-mail:</label>
-                <input placeholder="Digite seu e-mail para contato" type="email" name="email" id="email">
+                <input
+                  placeholder="Digite seu e-mail para contato"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
               </div>
               <div class="form-group full-width">
                 <label for="name">Menssagem:</label>
-               <textarea placeholder="Digite sua menssagem" name="message" id="message" cols="30" rows="10"></textarea>
+                <textarea
+                  placeholder="Digite sua menssagem"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
               </div>
               <div class="form-group full-width">
                 <button>Enviar Menssagem</button>
               </div>
-             </fieldset>
+            </fieldset>
           </form>
         </div>
       </div>
     </section>
 
     <footer id="footer" class="white-bg footer">
-      <p>Desenvolvido por <a rel="nofollow" target="_blank" href="https://www.linkedin.com/in/matheus-dario">Matheus Dario</a></p>
+      <p>
+        Desenvolvido por
+        <a
+          rel="nofollow"
+          target="_blank"
+          href="https://www.linkedin.com/in/matheus-dario"
+          >Matheus Dario</a
+        >
+      </p>
     </footer>
   </body>
 </html>
